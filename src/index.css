@@ -1,15 +1,102 @@
+*,
 body {
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
-  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header {
+  color: #0000a0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+}
+form {
+  width: 25%;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #0000a0;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+  width: 90%;
+}
+label {
+  font-weight: bold;
+  margin: 15px 0px 2px 0px;
+  display: flex;
+}
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+input[type='radio'],
+input[type='checkbox'] {
+  margin: 0 3px 0 12px;
+}
+input:disabled {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+textarea {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+select {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+/* button style */
+button:enabled {
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 25px;
+  border: none;
+  margin: 15px 0;
+  background-color: #0000a0;
+  cursor: pointer;
+}
+button:disabled {
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: none;
+  margin: 15px 0;
+  background-color: #6679ff;
+  cursor: not-allowed;
+}
+.error {
+  color: red;
+  font-weight: bold;
 }

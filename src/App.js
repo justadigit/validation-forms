@@ -1,8 +1,10 @@
+import React from 'react';
+import Views from './view/Views';
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <React.Fragment>
+      <Views />
+    </React.Fragment>
   );
 }
 
